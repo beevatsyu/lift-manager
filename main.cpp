@@ -1,5 +1,4 @@
 #include <iostream>
-#include <functional>
 #include <pthread.h>
 #include <unistd.h>
 using namespace std;
@@ -120,6 +119,5 @@ int main(int argc, const char *argv[])
 	sleep(10);
 	lm.request(1);
 	pthread_join(th, NULL);
-	//lm.service();
 	return 0;
 }
