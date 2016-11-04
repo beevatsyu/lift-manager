@@ -116,6 +116,9 @@ int main(int argc, const char *argv[])
 	pthread_create(&th, NULL, service_start, &lm);
 	sleep(2);
 	lm.request(3);
+	lm.request(5);
+	sleep(10);
+	lm.request(1);
 	pthread_join(th, NULL);
 	//lm.service();
 	return 0;
